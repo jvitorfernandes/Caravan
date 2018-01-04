@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Teste Bootstrap</title>
+    <title>Caravan | Contato</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     
@@ -11,6 +11,7 @@
 </head>
 <body>
         
+<!-- Nav -->
     <nav class='navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow'>
         <a href="index.html" class="navbar-brand">
             <img src="img/caravan.svg" alt="Caravan">
@@ -34,7 +35,7 @@
                     <a class="nav-link" href="planos.html">Planos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contato.html">Contato</a>
+                    <a class="nav-link active" href="contato.html">Contato</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
@@ -45,141 +46,68 @@
             </ul>
         </div>
     </nav>
-    
-    <section class="container-fluid">
-        <div class="row bg-dark text-white">
-           
-            <div class="col-lg-7 p-0">
-               
-                <div id="carroselCidades" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carroselCidades" data-slide-to="0" class="active"></li>
-                    <li data-target="#carroselCidades" data-slide-to="1"></li>
-                    <li data-target="#carroselCidades" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="img/california.jpg" alt="California">
-                      <div class="carousel-caption">
-                        <h1 class="display-4">California</h1>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="img/paris.jpg" alt="Paris">
-                      <div class="carousel-caption">
-                        <h1 class="display-4">Paris</h1>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="img/dublin.jpg" alt="Dublin">
-                      <div class="carousel-caption">
-                        <h1 class="display-4">Dublin</h1>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carroselCidades" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carroselCidades" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                  </a>
-                </div>
-                
-            </div>
-            
-            <div class="col-lg-5 align-self-center py-4">
-                <h1 class='display-4'>Realize a viagem do seu sonho</h1>
-                <p class='lead'>O melhor local para sua viagem é com a Caravan, mais de 5000 excursões concluídas.</p>
-                <form action="">
-                    <div class="input-group input-group-lg">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
-                      <div class="input-group-btn">
-                        <button class="btn btn-primary" type="button">Inscreva-se</button>
-                      </div>
-                    </div>
-                </form>
-                
-            </div>
-        </div>
-    </section>
-    
-    <section class="py-5 bg-light text-center">
+<!-- Nav -->
+
+    <section class="py-5">
         <div class="container">
-           <div class="my-5">
-                <span class='h6 d-block'>TUDO DE MELHOR PARA VOCÊ</span>
-                <h2 class="display-4 text-primary">Aproveite as Vantagens</h2>
+           <div class="my-5 text-center">
+                <span class='h6 d-block'>AINDA ESTÁ COM DÚVIDAS?</span>
+                <h2 class="display-4 text-primary">Fale Conosco</h2>
             </div>
             <div class="row">
-               
-                <div class="col-lg-4 col-sm-6">
-                    <div class="d-flex justify-content-center" style="height:100px">
-                        <img src="img/icones/passaporte.svg" alt="Passaporte">
+                <div class="col-md">
+                   <div class="bg-light rounded p-4 box-shadow p-4">
+                        <form>
+                          <div class="form-group">
+                           
+                            <label for="inputNome">Nome</label>
+                            <input type="text" class="form-control" id="inputNome" aria-describedby="nomeHelp" placeholder="">
+                            
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="">
+                            
+                            <label for="inputMensagem">Mensagem</label>
+                            <textarea class="form-control" id="inputMensagem" rows="5"></textarea>
+                          </div>
+                          
+                          <button type="submit" class="btn btn-primary d-block">Enviar Mensagem</button>
+                        </form>
                     </div>
-                    
-                    <h3>Documentos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="d-flex justify-content-center" style="height:100px">
-                        <img src="img/icones/passagens.svg" alt="Passagens">
-                    </div>
+                
+                <div class="col-md mt-4 mt-md-0">
+                     <div class="">
+                            
+                            <h4 class="h6">NOSSO ENDEREÇO</h4>
+                            <img src="img/mapa.png" alt="mapa" class="img-fluid box-shadow rounded">
+                            
+                            <h4 class="h6 mt-3">DADOS DE CONTATO</h4>
+                            <ul class="list-unstyled text-secondary">
+                                <li>caravan@caravan.com.br</li>
+                                <li>61 999 999 999</li>
+                                <li>Seg. a Sex. das 9h às 18h.</li>
+                            </ul>
+                            
+                            
+                            <h4 class="h6">REDES SOCIAIS</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="" class="btn btn-outline-secondary mb-2 btn-sm btn-block" style="max-width:240px;">TWITTER</a></li>
+                                <li><a href="" class="btn btn-outline-secondary mb-2 btn-sm btn-block" style="max-width:240px;">FACEBOOK</a></li>
+                                <li><a href="" class="btn btn-outline-secondary mb-2 btn-sm btn-block" style="max-width:240px;">YOUTUBE</a></li>
 
-                    <h3>Passagens</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </ul>
+                        
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="d-flex justify-content-center" style="height:100px">
-                        <img src="img/icones/translado.svg" alt="Translado">
-                    </div>
-
-                    <h3>Translados</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="d-flex justify-content-center" style="height:100px">
-                        <img src="img/icones/praias.svg" alt="Passaporte">
-                    </div>
-                    
-                    <h3>Praias</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="d-flex justify-content-center" style="height:100px">
-                        <img src="img/icones/bagagens.svg" alt="Passagens">
-                    </div>
-
-                    <h3>Bagagens</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="d-flex justify-content-center" style="height:100px">
-                        <img src="img/icones/turismo.svg" alt="Translado">
-                    </div>
-
-                    <h3>Turismo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-        
             </div>
             
-                <button class="btn btn-primary btn-lg mt-4">Comprar Plano</button>
-            
         </div>
-    </section>
-    
-    <section class="home-quote text-center text-white p-md-5 p-xs-4">
-        <blockquote class="blockquote py-4">
-          <p class="display-4"><em>"Happiness is as a butterfly which, when pursued, is always beyond our grasp, but which if you will sit down quietly, may alight upon you."</em></p>
-          <footer class="blockquote-footer text-white">Nathaniel Hawthorne</footer>
-        </blockquote>
+        </div>
     </section>
     
     <section class="py-5 bg-light">
         <div class="container">
             <div class="my-5 text-center">
-                <span class='h6 d-block'>AINDA ESTÁ COM DÚVIDAS?</span>
+<!--                <span class='h6 d-block'>AINDA ESTÁ COM DÚVIDAS?</span>-->
                 <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
             </div>
             
@@ -235,14 +163,12 @@
                 
             </div>
             
-            <div class="text-center my-4">
-                <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
-                <button class="btn btn-primary">Entre em Contato</button>
-            </div>
-            
         </div>
     </section>
     
+        
+
+<!-- Footer-->
     <footer class="bg-dark text-white mt-top">
         <div class="container py-4">
            <div class="row">
@@ -289,6 +215,7 @@
             <p class="mb-0">Caravan 2017. Alguns Direitos Reservados.</p>
         </div>
     </footer>
+<!-- Footer -->
     
 <!--  Modal -->
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
